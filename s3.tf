@@ -23,3 +23,10 @@ status = "Enabled"
 }
 }
 
+terraform {
+backend "s3" {
+region = "ap-southeast-1"
+bucket = "bobba1122-monobucket"
+key = "prod/terraform.tfstate"
+}
+}
